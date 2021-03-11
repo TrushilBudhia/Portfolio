@@ -287,9 +287,9 @@ footer {
 }
 
 /* MEDIA QUERIES */
-/* */ 
+/****************************************************/ 
 /* For TABLETS and larger devices - min-width 425px */
-/* */ 
+/****************************************************/ 
 @media (min-width: 425px) {
   /* Header section styling */
   #navbar {
@@ -324,9 +324,9 @@ footer {
   }
 }
 
-/* */ 
+/***********************************************************/ 
 /* For larger TABLETS and bigger devices - min-width 768px */
-/* */ 
+/***********************************************************/ 
 @media (min-width: 768px) {
   /* Header section styling */
   #navbar {
@@ -351,9 +351,9 @@ footer {
   }
 }
 
-/* */ 
+/****************************************************/ 
 /* For LAPTOPS and larger devices - min-width 980px */
-/* */ 
+/****************************************************/ 
 @media (min-width: 980px) {
   /* Header section styling */
   #navbar {
@@ -379,9 +379,9 @@ footer {
   }
 }
 
-/* */ 
+/*************************************/  
 /* For DESKTOP PC - min-width 1200px */
-/* */ 
+/*************************************/ 
 @media (min-width: 1200px) {
   /* About Me section styling */
   #about-me-section p {
