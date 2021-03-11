@@ -1,0 +1,324 @@
+/* Setting up CSS variables in the root */
+:root {
+  --main-green: #17a76b;
+  --main-green-gray: #457d70;
+  --main-light-plum: #924577;
+  --main-white: #ffffff;
+}
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Element styling */ 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Navigation bar styling */
+#navbar {
+  background: var(--main-green);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#navbar h1 {
+  margin-left: 10px;
+}
+
+#nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+#nav-list a {
+  color: var(--main-white);
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+#nav-list a:hover {
+  background: var(--main-green-gray);
+}
+
+/* Hero image section styling */
+#subtitle-text h3 {
+  background-color: var(--main-light-plum);
+  color: var(--main-white);
+  font-size: 2.5rem;
+  font-style: italic;
+  margin: 0 auto;
+  opacity: 70%;
+  position: relative;
+  text-align: center;
+  top: 70px;
+  z-index: 0;
+}
+
+/* About Me section styling */
+#about-me-section {
+  align-items: center;
+  background: url('../images/bg1.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;                            /* Takes up 100% of the viewport height */
+  justify-content: center;
+  width: 100%;
+}
+
+#about-me-section p {
+  background: var(--main-white);
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 200;
+  padding: 20px;
+  text-align: justify;
+  width: 50%;
+}
+
+/* Work Project section styling */
+#projects {
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  padding: 7rem 2rem;
+  text-align: center;
+}
+
+.projects-section-header {
+  bottom: 10px;
+  color: var(--main-white);
+  margin: 0 auto;
+
+  padding-bottom: 30px;
+  position: relative;
+}
+
+#projects h3 {
+  border-bottom: 0.2rem solid var(--main-white);
+  font-style: italic;
+  margin-bottom: 3rem;
+  max-width: 640px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  width: 100%;
+}
+
+.project {
+  background: var(--main-green);
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  object-fit: cover;
+  width: 100%;
+}
+
+.project-tile {
+  color: var(--main-white);
+  font-size: 2rem;
+  padding: 0rem 0rem;
+}
+
+.project:hover {
+  background: var(--main-light-plum);
+}
+
+.btn-show-all {
+  background: #303841;
+  font-size: 2rem;
+  transition: background 0.3s ease-out;
+}
+
+.btn {
+  border-radius: 2px;
+  color: var(--main-white);
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3e504b;
+}
+
+/* Contact me section styling */
+.contact-section {
+  align-items: center;
+  background: #0f0f0f;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;                             /* Takes up 80% of the viewport height */
+  justify-content: center;
+  padding: 0 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-section-header > p {
+  font-style: italic;
+}
+
+.contact-section-header h2 {
+  color: var(--main-white);
+  font-size: 6rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 980px;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+#phone-link {
+  display: none;
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
+}
+
+.fa, .fab, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+/* Footer section styling */
+footer {
+  background: var(--main-green);
+  border-top: 4px solid var(--main-green-gray);
+  color: var(--main-white);
+  display: flex;
+  font-weight: 300;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Media Queries */
+/* 1200px / 16px = 75em */
+@media screen and (max-width: 1200px) {
+  #about-me p {
+    width: 70%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media screen and (max-width: 980px) {
+  #navbar h1 {
+    display: none;
+  }
+  #navbar {
+    justify-content: flex-end;
+  }
+  #subtitle-text h3 {
+    font-size: 2.1rem;
+  }
+  #about-me-section {
+    background: var(--main-white);
+    height: 80vh;
+  }
+  #about-me-section p {
+    width: 80%;
+  }
+}
+
+/* 768px / 16px = 28.75em */
+@media screen and (max-width: 768px) {
+  #nav-list li a {
+    font-size: 1.8rem;
+  }
+  #subtitle-text h3 {
+    display: none;
+  }
+  #about-me-section {
+    background: var(--main-white);
+    height: 80vh;
+  }
+  #about-me-section p {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
