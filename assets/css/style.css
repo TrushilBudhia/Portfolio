@@ -67,7 +67,6 @@ p {
 
 img {
   display: block;
-  width: 100%;
 }
 
 /* Navigation Bar styling */
@@ -288,8 +287,9 @@ footer {
 
 /* MEDIA QUERIES */
 /****************************************************/ 
-/* For TABLETS and larger devices - min-width 425px */
+/* For TABLETS and larger devices */
 /****************************************************/ 
+/* min-width 425px */
 @media (min-width: 425px) {
   /* Header section styling */
   #navbar {
@@ -367,7 +367,7 @@ footer {
   }
   /* About Me section styling */
   #about-me-section {
-    background: url('../images/bg1.jpg');
+    background: url('../images/bg1.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 97vh;                             /* Takes up 97% of the viewport height */
   }
