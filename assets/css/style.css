@@ -86,13 +86,12 @@ img {
 
 #nav-list {
   display: block;
-  margin-right: 2rem;
 }
 
 #nav-list li a {
   color: var(--main-white);
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding: 2rem;
 }
 
@@ -287,9 +286,8 @@ footer {
 
 /* MEDIA QUERIES */
 /****************************************************/ 
-/* For TABLETS and larger devices */
+/* For TABLETS and larger devices - min-width 425px */
 /****************************************************/ 
-/* min-width 425px */
 @media (min-width: 425px) {
   /* Header section styling */
   #navbar {
@@ -298,9 +296,10 @@ footer {
   }
   #nav-list {
     display: flex;
+    margin-right: 2rem;
   }
   #nav-list li a {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
   }
   /* About Me section styling */
   #about-me-section p {
@@ -313,14 +312,6 @@ footer {
   /* Contact Information section styling */
   .contact-section-header h2 {
     font-size: 4.2rem;
-  }
-}
-
-/* min-width 500px */
-@media (min-width: 500px) {
-  /* Header section styling */
-  #nav-list li a {
-    font-size: 1.8rem;
   }
 }
 

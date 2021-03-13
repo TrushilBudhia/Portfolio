@@ -2,7 +2,9 @@
 
 ## Description
 
-The portfolio page contains information about myself and provides examples of the coding work I have done before. Information to contact me has also been provided in the webpage. 
+The portfolio page contains information about myself and provides examples of the coding work I have done before. 
+
+Information to contact me has also been provided in the webpage. 
 
 ## Assets
 
