@@ -13,7 +13,7 @@
   padding: 0;
 }
 
-/* Box-sizing and font sizing */
+/* Box-sizing */
 *,
 *::before,
 *::after {
@@ -23,25 +23,24 @@
 /* Element styling */ 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
   scroll-behavior: smooth;
+
 }
 
 body {
   color: var(--main-black);
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.4;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3.125rem;
 }
 
 h2 {
-  font-size: 4.2rem;
-  text-align: center;
+  font-size: 2.625rem;
 }
 
 h1, h2 {
@@ -72,7 +71,7 @@ img {
 /* Navigation Bar styling */
 #navbar {
   background: var(--main-green);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0.125rem 0 rgba(0, 0, 0, 0.6);
   left: 0;
   top: 0;
   width: 100%;
@@ -81,7 +80,7 @@ img {
 
 #navbar h1 {
   display: none;
-  margin-left: 10px;
+  margin-left: 0.625rem;
 }
 
 #nav-list {
@@ -91,8 +90,8 @@ img {
 #nav-list li a {
   color: var(--main-white);
   display: block;
-  font-size: 1.8rem;
-  padding: 2rem;
+  font-size: 1.125rem;
+  padding: 1.25rem;
 }
 
 #nav-list a:hover {
@@ -104,14 +103,14 @@ img {
   background-color: var(--main-light-plum);
   color: var(--main-white);
   display: none;
-  font-size: 2.5rem;
+  font-size: 1.5625rem;
   font-style: italic;
   font-weight: 100;
   margin: 0 auto;
   opacity: 70%;
   position: relative;
   text-align: center;
-  top: 70px;
+  top: 4.375rem;
   z-index: 0;
 }
 
@@ -128,33 +127,33 @@ img {
 
 #about-me-section p {
   background: var(--main-white);
-  font-size: 2.5rem;
+  font-size: 1.5625rem;
   font-style: italic;
   font-weight: 200;
-  padding: 20px;
+  padding: 1.5rem;
   text-align: justify;
   width: 90%;
 }
 
 .photo {
-  border: 2px solid var(--main-black);
-  border-radius: 10rem;
+  border: 0.125rem solid var(--main-black);
+  border-radius: 6.2rem;
   display: none;
   opacity: 90%;
   position: relative;
-  top: 40px;
+  top: 2.5rem;
   width: 180px;
 }
 
 /* Project Work section styling */
 #projects {
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-  padding: 7rem 2rem;
+  padding: 4.375rem 1.25rem;
   text-align: center;
 }
 
 .projects-section-header {
-  bottom: 10px;
+  bottom: 0.625rem;
   color: var(--main-white);
   margin: 0 auto;
   padding-bottom: 30px;
@@ -162,37 +161,32 @@ img {
 }
 
 #projects h3 {
-  border-bottom: 0.2rem solid var(--main-white);
+  border-bottom: 0.125rem solid var(--main-white);
   font-style: italic;
-  margin-bottom: 3rem;
+  margin-bottom: 1.875rem;
   max-width: 640px;
 }
 
-.main-project {
-  display: grid;
-  max-width: 1280px;
-}
-
 main > .projects-grid {
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
+  grid-gap: 2.5rem;
   max-width: 1280px;
   margin: 0 auto;
-  margin-bottom: 6rem;
+  margin-bottom: 3.75rem;
   width: 100%;
 }
 
 .project-work {
   background: var(--main-green);
-  border-radius: 2px;
+  border-radius: 0.125rem;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   color: var(--main-white);
-  font-size: 2rem;
+  font-size: 1.25rem;
   padding: 0rem;
   width: 100%;
 }
@@ -211,38 +205,33 @@ main > .projects-grid {
 }
 
 /* Contact Information section styling */
-.contact-section {
+#contact {
   align-items: center;
   background: #0f0f0f;
   display: flex;
   flex-direction: column;
   height: 60vh;                             /* Takes up 60% of the viewport height */
   justify-content: center;
-  padding: 0 2rem;
+  padding: 0 1.25rem;
   text-align: center;
   width: 100%;
 }
 
-.contact-section-header > p {
-  font-style: italic;
-}
-
-.contact-section-header h2 {
+#contact-section-header h2 {
   color: var(--main-white);
-
 }
 
-.contact-links {
+#contact-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 980px;
-  margin-top: 4rem;
+  margin-top: 2.5rem;
   width: 100%;
 }
 
 .contact-details {
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   text-shadow: 2px 2px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
 }
@@ -251,7 +240,7 @@ main > .projects-grid {
   border-radius: 2px;
   color: var(--main-white);
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 0.625rem 1.25rem;
   text-decoration: none;
 }
 
@@ -281,7 +270,7 @@ footer {
   display: flex;
   font-weight: 300;
   justify-content: center;
-  padding: 2rem;
+  padding: 1.25rem;
 }
 
 /* MEDIA QUERIES */
@@ -296,22 +285,18 @@ footer {
   }
   #nav-list {
     display: flex;
-    margin-right: 2rem;
+    margin-right: 1.25rem;
   }
   #nav-list li a {
-    font-size: 2.2rem;
+    font-size: 1.375rem;
   }
   /* About Me section styling */
   #about-me-section p {
-    font-size: 3rem;
-  }
-  /* Projects Work section styling */
-  .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    font-size: 1.875rem;
   }
   /* Contact Information section styling */
-  .contact-section-header h2 {
-    font-size: 4.2rem;
+  #contact-section-header h2 {
+    font-size: 2.625rem;
   }
 }
 
@@ -324,7 +309,7 @@ footer {
     position: fixed;
   }
   #nav-list li a {
-    font-size: 2.2rem;
+    font-size: 1.375rem;
   }
   #subtitle-text h3 {
     display: block;
@@ -334,11 +319,11 @@ footer {
     margin: 0 auto;
   }
   /* Contact Information section styling */
-  .contact-section {
+  #contact {
     height: 80vh;                             /* Takes up 80% of the viewport height */
   }
-  .contact-section-header h2 {
-    font-size: 6rem;
+  #contact-section-header h2 {
+    font-size: 3.75rem;
   }
 }
 
@@ -354,7 +339,7 @@ footer {
     display: block;
   }
   #subtitle-text h3 {
-    font-size: 2.5rem;
+    font-size: 1.5675rem;
   }
   /* About Me section styling */
   #about-me-section {
