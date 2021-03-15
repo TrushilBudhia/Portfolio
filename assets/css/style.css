@@ -24,7 +24,6 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-
 }
 
 body {
@@ -217,7 +216,7 @@ main > .projects-grid {
   width: 100%;
 }
 
-#contact-section-header h2 {
+#contact h2 {
   color: var(--main-white);
 }
 
@@ -275,9 +274,13 @@ footer {
 
 /* MEDIA QUERIES */
 /****************************************************/ 
-/* For TABLETS and larger devices - min-width 425px */
+/* For large PHONES, TABLETS and larger devices - min-width 425px */
 /****************************************************/ 
-@media (min-width: 425px) {
+@media only screen and (min-width: 425px) {
+  /* Element styling */
+  h2 {
+    font-size: 3rem;
+  }
   /* Header section styling */
   #navbar {
     display: flex;
@@ -294,52 +297,18 @@ footer {
   #about-me-section p {
     font-size: 1.875rem;
   }
-  /* Contact Information section styling */
-  #contact-section-header h2 {
-    font-size: 2.625rem;
-  }
 }
 
 /***********************************************************/ 
 /* For larger TABLETS and bigger devices - min-width 768px */
 /***********************************************************/ 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   /* Header section styling */
   #navbar {
     position: fixed;
   }
-  #nav-list li a {
-    font-size: 1.375rem;
-  }
   #subtitle-text h3 {
     display: block;
-  }
-  /* About Me section styling */
-  #about-me-section p {
-    margin: 0 auto;
-  }
-  /* Contact Information section styling */
-  #contact {
-    height: 80vh;                             /* Takes up 80% of the viewport height */
-  }
-  #contact-section-header h2 {
-    font-size: 3.75rem;
-  }
-}
-
-/****************************************************/ 
-/* For LAPTOPS and larger devices - min-width 980px */
-/****************************************************/ 
-@media (min-width: 980px) {
-  /* Header section styling */
-  #navbar {
-    justify-content: space-between;
-  }
-  #navbar h1 {
-    display: block;
-  }
-  #subtitle-text h3 {
-    font-size: 1.5675rem;
   }
   /* About Me section styling */
   #about-me-section {
@@ -348,17 +317,41 @@ footer {
     height: 97vh;                             /* Takes up 97% of the viewport height */
   }
   #about-me-section p {
-    width: 60%;
+    margin: 0 auto;
   }
   .photo {
     display: block;
+  }
+  /* Contact Information section styling */
+  #contact {
+    height: 80vh;                             /* Takes up 80% of the viewport height */
+  }
+  #contact h2 {
+    font-size: 3.75rem;
+  }
+}
+
+/****************************************************/ 
+/* For LAPTOPS and larger devices - min-width 992px */
+/****************************************************/ 
+@media only screen and (min-width: 992px) {
+  /* Header section styling */
+  #navbar {
+    justify-content: space-between;
+  }
+  #navbar h1 {
+    display: block;
+  }
+  /* About Me section styling */
+  #about-me-section p {
+    width: 60%;
   }
 }
 
 /*************************************/  
 /* For DESKTOP PC - min-width 1200px */
 /*************************************/ 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   /* About Me section styling */
   #about-me-section p {
     width: 50%;
