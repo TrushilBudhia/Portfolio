@@ -119,8 +119,9 @@ img {
   background: var(--main-white);
   display: flex;
   flex-direction: column;
-  height: 80vh;                            /* Takes up 80% of the viewport height */
+  height: 100vh;                            /* Takes up 100% of the viewport height */
   justify-content: center;
+
   width: 100%;
 }
 
@@ -209,7 +210,7 @@ main > .projects-grid {
   background: #0f0f0f;
   display: flex;
   flex-direction: column;
-  height: 60vh;                             /* Takes up 60% of the viewport height */
+  height: 70vh;                             /* Takes up 70% of the viewport height */
   justify-content: center;
   padding: 0 1.25rem;
   text-align: center;
@@ -314,7 +315,6 @@ footer {
   #about-me-section {
     background: url('../images/bg1.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 97vh;                             /* Takes up 97% of the viewport height */
   }
   #about-me-section p {
     margin: 0 auto;
