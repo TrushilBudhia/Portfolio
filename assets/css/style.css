@@ -181,6 +181,14 @@ main > .projects-grid {
   width: 100%;
 }
 
+#main-project {
+  background: #0d7c4e;
+}
+
+#main-project:hover {
+  background: var(--main-light-plum);
+}
+
 .project-work {
   background: var(--main-green);
   border-radius: 0.125rem;
