@@ -1,7 +1,7 @@
 /* Setting up CSS variables in the root */
 :root {
   --main-black: #000;
-  --main-green: #17a76b;
+  --main-green: #1aa169;
   --main-green-gray: #457d70;
   --main-light-plum: #924577;
   --main-white: #ffffff;
@@ -179,14 +179,6 @@ main > .projects-grid {
   margin: 0 auto;
   margin-bottom: 3.75rem;
   width: 100%;
-}
-
-#main-project {
-  background: #0d7c4e;
-}
-
-#main-project:hover {
-  background: var(--main-light-plum);
 }
 
 .project-work {
