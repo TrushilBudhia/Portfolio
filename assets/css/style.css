@@ -67,6 +67,15 @@ img {
   display: block;
 }
 
+/* Display */
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Navigation Bar styling */
 #navbar {
   background: var(--main-green);
@@ -172,9 +181,9 @@ main > .projects-grid {
 }
 
 .projects-grid {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 2.5rem;
+  grid-gap: 2.5rem; */
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 3.75rem;
@@ -204,8 +213,9 @@ main > .projects-grid {
   width: 100%;
 }
 
-.project-work-paragraph:hover {
+.project-work-paragraph:hover, .project-repository:hover {
   background: var(--main-light-plum);
+  color: var(--main-white);
 }
 
 .project-repository {
@@ -216,10 +226,6 @@ main > .projects-grid {
   justify-content: center;
   padding: 0.4rem 0rem;
   width: 100%;
-}
-
-.project-repository:hover { 
-  background: var(--main-light-plum);
 }
 
 /* Contact Information section styling */
