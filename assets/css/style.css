@@ -171,9 +171,6 @@ main > .projects-container {
 }
 
 .projects-container {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 2.5rem; */
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 3.75rem;
@@ -181,6 +178,7 @@ main > .projects-container {
 }
 
 .project-work {
+  border-radius: 2rem;
   width: 100%;
 }
 
