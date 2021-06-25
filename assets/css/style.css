@@ -67,15 +67,6 @@ img {
   display: block;
 }
 
-/* Display */
-.show {
-  display: block;
-}
-
-.hidden {
-  display: none;
-}
-
 /* Navigation Bar styling */
 #navbar {
   background: var(--main-green);
@@ -130,7 +121,6 @@ img {
   flex-direction: column;
   height: 100vh;                            /* Takes up 100% of the viewport height */
   justify-content: center;
-
   width: 100%;
 }
 
@@ -176,11 +166,11 @@ img {
   max-width: 640px;
 }
 
-main > .projects-grid {
+main > .projects-container {
   margin-bottom: 2.5rem;
 }
 
-.projects-grid {
+.projects-container {
   /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 2.5rem; */
@@ -252,6 +242,10 @@ main > .projects-grid {
   max-width: 980px;
   margin-top: 2.5rem;
   width: 100%;
+}
+
+#contact-links a:hover {
+  color: var(--main-white);
 }
 
 .contact-details {
