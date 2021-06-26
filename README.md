@@ -37,6 +37,7 @@ The following images shows the web application's appearance and functionality:
 - HTML
 - CSS
 - Font Awesome (icons)
+- [Bulma](https://bulma.io/)
 
 ## Contributing
 Contributions, issues and feature requests are welcome.
